@@ -24,9 +24,3 @@ A aplicação utiliza Docker Compose para rodar o banco de dados de forma simple
 - Docker + Docker Compose
 - (Opcional) DBeaver para visualizar o banco
 
-### ▶️ Passo a passo
-
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/asaphehs/Todo-List-JAVA.git
-   cd Todo-List-JAVA
