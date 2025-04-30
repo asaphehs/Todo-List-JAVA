@@ -1,5 +1,7 @@
 package com.example.todo_java.dto;
 
+import com.example.todo_java.model.Priority;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,4 +20,7 @@ public class TaskRequest {
     private String description;
 
     private Boolean done = false;
+
+    @NotNull(message = "A prioridade é obrigatória.")
+    private Priority priority;
 }

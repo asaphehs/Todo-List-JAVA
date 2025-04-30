@@ -71,6 +71,7 @@ public class TaskService {
                 .title(request.getTitle())
                 .description(request.getDescription())
                 .done(request.getDone())
+                .priority(request.getPriority())
                 .build();
     }
 
@@ -80,6 +81,7 @@ public class TaskService {
                 .title(task.getTitle())
                 .description(task.getDescription())
                 .done(task.getDone())
+                .priority(task.getPriority())
                 .build();
     }
 }

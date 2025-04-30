@@ -25,4 +25,8 @@ public class Task {
 
     @Column(nullable = false)
     private Boolean done;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private Priority priority;
 }
