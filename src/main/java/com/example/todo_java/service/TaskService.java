@@ -51,13 +51,14 @@ public class TaskService {
         task.setTitle(request.getTitle());
         task.setDescription(request.getDescription());
         task.setDone(request.getDone());
+        task.setPriority(request.getPriority());
 
         Task updated = taskRepository.save(task);
         return toResponse(updated);
     }
 
     // Deletar tarefa
-    public void deletTask(Long id) {
+    public void deleteTask(Long id) {
         if (!taskRepository.existsById(id)) {
             throw new EntityNotFoundException("Tarefa nao encontrada com ID: " + id);
         }
