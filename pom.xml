@@ -18,6 +18,9 @@
 
     <properties>
         <java.version>21</java.version>
+        <sonar.host.url>http://localhost:9000</sonar.host.url>
+        <sonar.token>sqp_30498b965abb638d46f60153efacd1f65ae3da5f</sonar.token>
+        <sonar.projectKey>todo-java</sonar.projectKey>
     </properties>
 
     <dependencies>
@@ -76,7 +79,11 @@
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
-
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>4.0.0.4121</version>
+            </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
